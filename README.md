@@ -1,8 +1,6 @@
 # JavaScript packages
 
-## Rules
-
-### Naming
+## Naming
 
 - Packages should be added to the environment appropriate to their environment. React Native-only components should be saved under `react-native`, for instance.
 - Packages should be published to the `@drivetribe` organisation.
