@@ -1,2 +1,3 @@
-# javascript
-JavaScript style guide and shared modules.
+# JavaScript packages
+
+* [Style guide](https://github.com/drivetribe/javascript-style-guide)
