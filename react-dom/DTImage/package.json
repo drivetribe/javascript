@@ -1,0 +1,32 @@
+{
+  "name": "@drivetribe/image",
+  "version": "0.0.0-semantically-released",
+  "description": "Redusable image component",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel --presets es2015,stage-2,react -d ./ src/",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drivetribe/javascript-packages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drivetribe/javascript-packages/issues"
+  },
+  "homepage": "https://github.com/drivetribe/javascript-packages#readme",
+  "dependencies": {
+    "react": "^15.1.0",
+    "connectDTImageToApi": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "semantic-release": "^4.3.5"
+  }
+}
