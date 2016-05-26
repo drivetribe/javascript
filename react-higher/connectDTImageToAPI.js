@@ -5,25 +5,21 @@ const connectDTImageToApi = (DTImageComponent) => {
   const DTImageContainer = class extends Component {
     constructor(props) {
       super(props);
-      let { width, height } = props.data;
+      const { width, height } = this.props.data;
       const ratio = parseFloat(width / height).toFixed(2);
 
-      if (props.width && props.height) {
-        width = props.width;
-        height = props.height;
-      }
+      this.state = { width, height, ratio };
+    }
 
-      if (props.width && !props.height) {
-        width = props.width;
-        height = parseFloat(width / ratio);
-      }
+    componentWillMount() {
+      let { width, height } = this.props;
+      const { ratio } = this.state;
 
-      if (!props.width && props.height) {
-        height = props.height;
-        width = parseFloat(height * ratio);
-      }
+      if (width && !height) height = parseFloat(width / ratio);
 
-      this.state = { width, height };
+      if (!width && height) width = parseFloat(height * ratio);
+
+      if (width && height) this.setState({ width, height });
     }
 
     render() {
