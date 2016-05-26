@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/drivetribe/javascript-packages#readme",
   "dependencies": {
-    "connectDTImageToApi": "^1.0.0",
+    "@drivetribe/react-dom-image": "^1.0.0",
     "express": "git+https://git@github.com/visionmedia/express.git",
     "react": "^15.1.0"
   },

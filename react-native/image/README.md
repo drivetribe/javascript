@@ -28,4 +28,7 @@ const data = {
 // and will rewrite `width` and `height` from `data`.
 // More optional props could be provided.
 <DTImage data={data} width={200} height={200} {...props}/>
+
+// Also supports wrapping other elements to provide background imagery
+<DTImage><Text /></DTImage>
 ```
