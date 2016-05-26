@@ -1,8 +1,8 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import omit from 'lodash/omit';
 
 const connectDTImageToApi = (DTImageComponent) => {
-  const DTImageContainer = class extends React.Component {
+  const DTImageContainer = class extends Component {
     constructor(props) {
       super(props);
       let { width, height } = props.data;

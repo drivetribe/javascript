@@ -1,4 +1,4 @@
-# @drivetribe/image
+# @drivetribe/react-dom-image
 
 A reusable image component, build with ES2015.
 
@@ -7,12 +7,14 @@ A reusable image component, build with ES2015.
 Install the module directly from npm:
 
 ```
-npm install @drivetribe/image --save
+npm install @drivetribe/react-dom-image --save
 ```
 
 ## Usage
 
 ```js
+import DTImage from '@drivetribe/react-dom-image';
+
 // 'data' JSON from the API
 // 'source', 'width' and 'height' attributes are required
 const data = {

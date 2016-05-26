@@ -1,5 +1,5 @@
 {
-  "name": "@drivetribe/image",
+  "name": "@drivetribe/react-dom-image",
   "version": "0.0.0-semantically-released",
   "description": "Redusable image component",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/drivetribe/javascript-packages.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/drivetribe/javascript-packages/issues"
   },
@@ -28,5 +28,6 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
     "semantic-release": "^4.3.5"
-  }
+  },
+  "private": true
 }
