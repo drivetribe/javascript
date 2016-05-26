@@ -28,6 +28,7 @@ const connectDTImageToApi = (DTImageComponent) => {
 
     render() {
       const { width, height } = this.state;
+      // TODO: Width and height params should added to image source
       const { source } = this.props.data;
       const props = omit(this.props, ['width', 'height', 'data']);
       return (
