@@ -13,7 +13,7 @@ npm install @drivetribe/image --save
 ## Usage
 
 ```js
-// data information for the API
+// 'data' JSON from the API
 // 'source', 'width' and 'height' attributes are required
 const data = {
   source: 'path to image',
@@ -22,7 +22,7 @@ const data = {
 };
 
 // 'data' is required property.
-// Additional 'width' and 'height' are optional
+// Additional 'width' and 'height' properties are optional
 // and will rewrite `width` and `height` from `data`.
 // More optional props could be provided.
 <DTImage data={data} width={200} height={200} {...props}/>
