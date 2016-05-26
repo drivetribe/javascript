@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/drivetribe/javascript-packages#readme",
   "dependencies": {
-    "react": "^15.1.0",
-    "connectDTImageToApi": "^1.0.0"
+    "connectDTImageToApi": "^1.0.0",
+    "express": "git+https://git@github.com/visionmedia/express.git",
+    "react": "^15.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",

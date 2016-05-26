@@ -1,5 +1,5 @@
 import React from 'react';
-import connectDTImageToApi from 'connectDTImageToApi';
+import wrapImageInApiParser from '@drivetribe/react-higher-wrap-image-in-api-parser';
 
 const DTImage = (props) => (
   <img
@@ -14,4 +14,4 @@ DTImage.propTypes = {
   height: React.PropTypes.number.isRequired,
 };
 
-export default connectDTImageToApi(DTImage);
+export default wrapImageInApiParser(DTImage);

@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import omit from 'lodash/omit';
 
-const connectDTImageToApi = (DTImageComponent) => {
-  const DTImageContainer = class extends Component {
+const wrapImageInApiParser = (DTImageComponent) => {
+  class ImageApiParser extends Component {
     constructor(props) {
       super(props);
       let { width, height } = props.data;
@@ -37,7 +37,7 @@ const connectDTImageToApi = (DTImageComponent) => {
     }
   };
 
-  DTImageContainer.propTypes = {
+  ImageApiParser.propTypes = {
     data: PropTypes.shape({
       source: PropTypes.string.isRequired,
       width: PropTypes.number,
@@ -47,7 +47,7 @@ const connectDTImageToApi = (DTImageComponent) => {
     height: PropTypes.number,
   };
 
-  return DTImageContainer;
+  return ImageApiParser;
 };
 
-export default connectDTImageToApi;
+export default wrapImageInApiParser;
