@@ -3,7 +3,7 @@ import Input from '../Input';
 
 const TextInput = (props) => {
   return (
-    <Input {...props} />);
+    <Input type="text" {...props} />);
 };
 
 export default TextInput;
