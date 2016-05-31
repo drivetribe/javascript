@@ -1,6 +1,6 @@
 # Reducer Compositors
 
-Functions for compositing reducers.
+Functions for compositing reducers. These functions are then composable with other reducers, for instance with Redux's `combineReducers`.
 
 ## Install
 
@@ -23,6 +23,7 @@ This approach should prevent the long string of `switch` statements common to re
 #### Example
 
 ```js
+import { createStore } from 'redux';
 import { createReducerFromMap } from 'reducer-compositors';
 
 const ACTION_FOO = 'foo';
@@ -32,6 +33,8 @@ const reducerMap = {
   [ACTION_FOO]: (state, action) => { ...newState }
 };
 
-dispatch({ type: ACTION_FOO }); // State is updated
-dispatch({ type: ACTION_BAR }); // State is not updated
+const store = createStore(createReducerFromMap(reducerMap));
+
+store.dispatch({ type: ACTION_FOO }); // State is updated
+store.dispatch({ type: ACTION_BAR }); // State is not updated
 ```
