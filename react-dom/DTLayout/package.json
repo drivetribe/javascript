@@ -1,0 +1,29 @@
+{
+  "name": "@drivetribe/react-dom-layout",
+  "version": "1.0.0",
+  "description": "Reusable layout components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drivetribe/javascript-packages.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/drivetribe/javascript-packages/issues"
+  },
+  "homepage": "https://github.com/drivetribe/javascript-packages#readme",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0"
+  }
+}
