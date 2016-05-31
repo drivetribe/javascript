@@ -1,0 +1,35 @@
+{
+  "name": "@drivetribe/javascript-packages",
+  "version": "1.0.0",
+  "description": "A collection of shared JavaScript packages",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-flowtype": "^2.2.7",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drivetribe/javascript-packages.git"
+  },
+  "author": "DriveTribe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drivetribe/javascript-packages/issues"
+  },
+  "homepage": "https://github.com/drivetribe/javascript-packages#readme",
+  "private": true
+}
