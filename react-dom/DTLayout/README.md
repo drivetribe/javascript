@@ -30,12 +30,15 @@ import DTColumn from '@drivetribe/react-dom-layout/Column';
 ```
 ## Properties
 
-Column component of react-dom-layout accepts next break point properties:
+`Column` component of react-dom-layout accepts next break point properties:
 `unit`, `unitSm`, `unitMd`, `unitLg`, `unitXl`,
 for the related minimal width of devices screens:
 all, 568px, 768px, 1024px, 1280px
 
-Break point property could have next formats:
+Break point property could have these formats:
 `1-2` - which means that Column would be 50% width.
 `1-5` - which means that Column would be 20% width.
 `2-3` - which means that Column would be 2/3 of 100% width.
+
+Both `Column` and `Grid` components accepts any additional properties
+including `className` and pass them down to element.

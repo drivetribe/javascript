@@ -10,19 +10,21 @@ const Column = (props) => {
     unitMd,
     unitLg,
     unitXl,
+    className,
     ...restProps,
   } = props;
 
-  const className = classNames(
+  const jointClassNames = classNames(
     styles[`column-${unit}`],
     styles[`columnSm-${unitSm}`],
     styles[`columnMd-${unitMd}`],
     styles[`columnLg-${unitLg}`],
-    styles[`columnXL-${unitXl}`]
+    styles[`columnXL-${unitXl}`],
+    className
   );
 
   return (
-    <div className={className} {...restProps}>
+    <div className={jointClassNames} {...restProps}>
       {children}
     </div>
   );
@@ -30,6 +32,7 @@ const Column = (props) => {
 
 Column.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
   unit: PropTypes.string.isRequired,
   unitSm: PropTypes.string,
   unitMd: PropTypes.string,
