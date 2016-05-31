@@ -1,0 +1,30 @@
+@define-mixin column $breakPoint {
+  @for $i from 1 to 5 {
+    @for $j from 1 to 5 {
+      .column$(breakPoint)-$(i)-$(j) {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% / $(j) * $(i));
+      }
+    }
+  }
+}
+
+
+@mixin column;
+
+@media (min-width: 568px) {
+  @mixin column Sm;
+}
+
+@media (min-width: 768px) {
+  @mixin column Md;
+}
+
+@media (min-width: 1024px) {
+  @mixin column Lg;
+}
+
+@media (min-width: 1280px) {
+  @mixin column Xl;
+}
