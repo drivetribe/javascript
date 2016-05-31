@@ -13,4 +13,4 @@ DTImage.propTypes = {
   height: React.PropTypes.number.isRequired,
 };
 
-export wrapImageInApiParser(DTImage);
+export default wrapImageInApiParser(DTImage);
