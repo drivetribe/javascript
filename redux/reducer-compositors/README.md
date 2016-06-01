@@ -10,6 +10,14 @@ npm install @drivetribe/reducer-compositors --save-dev
 
 ## Compositors
 
+### Compose reducers
+
+```js
+composeReducers(...reducers);
+```
+
+When given an indefinite number of reducers, it will return a new reducer that calls each reducer in sequence until a new state is returned.
+
 ### Create reducer from map
 
 ```js
