@@ -34,5 +34,5 @@ export function composeReducers(...reducers) {
     }
 
     return state;
-  }
+  };
 }
