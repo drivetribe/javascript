@@ -1,11 +1,11 @@
-# Reducer Compositors
+# Reducer Composers
 
-Functions for compositing reducers. These functions are then composable with other reducers, for instance with Redux's `combineReducers`.
+Functions for composing reducers. These functions are then composable with other reducers, for instance with Redux's `combineReducers`.
 
 ## Install
 
 ```js
-npm install @drivetribe/reducer-compositors --save-dev
+npm install @drivetribe/reducer-composers --save-dev
 ```
 
 ## Compositors
@@ -32,7 +32,7 @@ This approach should prevent the long string of `switch` statements common to re
 
 ```js
 import { createStore } from 'redux';
-import { createReducerFromMap } from 'reducer-compositors';
+import { createReducerFromMap } from 'reducer-composers';
 
 const ACTION_FOO = 'foo';
 const ACTION_BAR = 'bar';
