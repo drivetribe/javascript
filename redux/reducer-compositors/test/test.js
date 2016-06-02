@@ -15,7 +15,7 @@ const createActionB = () => ({ type: EXAMPLE_ACTION_B });
 describe('composeReducers()', () => {
   
   it ('should return a new reducer that calls each provided reducer in order', () => {
-    const reducer = composeReducers(() => EXAMPLE_ACTION_A, () => EXAMPLE_ACTION_B);
+    const reducer = composeReducers([() => EXAMPLE_ACTION_A, () => EXAMPLE_ACTION_B]);
 
     expect(reducer(EXAMPLE_ACTION_A)).to.equal(EXAMPLE_ACTION_B);
     expect(reducer(EXAMPLE_ACTION_B)).to.equal(EXAMPLE_ACTION_A);
