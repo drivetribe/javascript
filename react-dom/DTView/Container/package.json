@@ -1,0 +1,25 @@
+{
+  "name": "@drivetribe/react-dom-container",
+  "version": "1.0.0",
+  "description": "A low level scrollable container",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drivetribe/javascript-packages/tree/container/react-dom/DTView/Container"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "container"
+  ],
+  "author": "olivier.colonna@drivetribe.com",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "2.2.5",
+    "react": "15.1.0"
+  },
+  "devDependencies": {}
+}

@@ -1,6 +1,6 @@
 # DTView > Container
 
-A reusable image component, build with ES2015.
+A reusable container component, build with ES2015.
 
 ## Installation
 
