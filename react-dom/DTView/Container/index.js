@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
-import styles from './container.css'
+import styles from './styles.css';
 
 /**
  * Class representing a container.
@@ -10,16 +10,16 @@ import styles from './container.css'
 class Container extends Component {
 
   render() {
-    const { children, direction } = this.props;
-    const { dtContainer, dtContainerScrollX, dtContainerScrollY } = styles;
-    const containerCls = classNames({
-      dtContainer: true,
-      dtContainerScrollY: (direction === 'vertical'),
-      dtContainerScrollX: (direction === 'horizontal')
+    const { children, vertical, horizontal, className } = this.props;
+    const containerClass = classNames({
+      [styles.container]: true,
+      [styles.containerScrollY]: vertical,
+      [styles.containerScrollX]: horizontal,
+      [className]: className,
     });
 
     return (
-      <div className={containerCls}>
+      <div className={containerClass}>
         {children}
       </div>
     );
@@ -27,10 +27,10 @@ class Container extends Component {
 }
 
 Container.propTypes = {
-  children: React.PropTypes.node.isRequired,
-  direction: React.PropTypes.oneOf([
-    'vertical', 'horizontal'
-  ])
+  children: PropTypes.node.isRequired,
+  vertical: PropTypes.boolean,
+  horizontal: PropTypes.boolean,
+  className: PropTypes.string,
 };
 
 export default Container;
