@@ -1,8 +1,14 @@
 import React from 'react';
-import Input from '../Input';
+import DefaultInput from '../DefaultInput';
+
+/**
+ * Class representing a DefaultInput.
+ * @author julia.sklyar@drivetribe.com
+ * @extends DefaultInput
+ */
 
 const TextInput = (props) => (
-  <Input type="text" {...props} />
+  <DefaultInput type="text" {...props} />
 );
 
 export default TextInput;

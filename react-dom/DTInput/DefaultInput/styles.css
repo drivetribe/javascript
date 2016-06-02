@@ -1,4 +1,4 @@
-.defaultCls {
+.defaultInput {
   padding: 8px 10px;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-.defaultCls:focus {
+.defaultInput:focus {
   outline: 0;
   border-color: #129fea;
   box-shadow: 0 0 3px #74bee6;
 }
 
 .error {
-  composes: defaultCls;
+  composes: defaultInput;
   border: 1px solid #cb0101;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .valid {
-  composes: defaultCls;
+  composes: defaultInput;
   border: 1px solid #05b636;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .disabled {
-  composes: defaultCls;
+  composes: defaultInput;
   cursor: not-allowed;
   background-color: #eaeded;
   color: #cad2d3;

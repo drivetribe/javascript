@@ -1,8 +1,14 @@
 import React from 'react';
-import Input from '../Input';
+import DefaultInput from '../DefaultInput';
+
+/**
+ * Class representing a DefaultInput.
+ * @author julia.sklyar@drivetribe.com
+ * @extends DefaultInput
+ */
 
 const PasswordInput = (props) => (
-  <Input
+  <DefaultInput
     type="password"
     placeholder="Password"
     {...props}

@@ -1,8 +1,14 @@
 import React from 'react';
-import Input from '../Input';
+import DefaultInput from '../DefaultInput';
+
+/**
+ * Class representing a DefaultInput.
+ * @author julia.sklyar@drivetribe.com
+ * @extends DefaultInput
+ */
 
 const EmailInput = (props) => (
-  <Input
+  <DefaultInput
     type="email"
     placeholder="Email"
     {...props}
