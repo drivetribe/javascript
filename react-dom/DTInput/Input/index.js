@@ -1,23 +1,23 @@
 import React, { PropTypes } from 'react';
+import classNames from 'classnames';
 import styles from './styles.css';
-import classnames from 'classnames';
 
-const Input = (props) => {
-  let className = styles.default;
+const Input = ({ errorCls, validCls, disabledCls, className }) => {
+  const { defaultCls, error, valid, disabled } = styles;
 
-  if (props.error) className = styles.error;
-
-  if (props.valid) className = styles.valid;
-
-  if (props.disabled) className = styles.disabled;
-
-  className = classnames(className, props.className);
+  const InputClass = classNames({
+    defaultCls: true,
+    error: errorCls,
+    valid: validCls,
+    disabled: disabledCls
+  });
 
   return (
     <input
-      className={className}
+      className={InputClass}
       {...props}
-    />);
+    />
+  );
 };
 
 Input.propTypes = {
