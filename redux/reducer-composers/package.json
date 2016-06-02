@@ -1,8 +1,8 @@
 {
-  "name": "@drivetribe/reducer-compositors",
+  "name": "@drivetribe/reducer-composers",
   "version": "1.0.0",
   "description": "Collection of functions for reducer composition.",
-  "main": "lib/reducer-compositors.js",
+  "main": "lib/reducer-composers.js",
   "directories": {
     "test": "test"
   },
