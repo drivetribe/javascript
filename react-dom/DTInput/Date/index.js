@@ -2,16 +2,15 @@ import React from 'react';
 import DefaultInput from '../DefaultInput';
 
 /**
- * Class representing a SearchInput.
+ * Class representing a DateInput.
  * @author radu.ciocan@drivetribe.com
  */
 
-const SearchInput = (props) => (
+const DateInput = (props) => (
   <DefaultInput
-    type="search"
-    placeholder="Search"
+    type="date"
     {...props}
   />
 );
 
-export default SearchInput;
+export default DateInput;
