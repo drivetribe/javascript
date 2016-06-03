@@ -27,8 +27,8 @@ class Container extends Component {
 
 Container.propTypes = {
   children: PropTypes.node.isRequired,
-  vertical: PropTypes.boolean,
-  horizontal: PropTypes.boolean,
+  vertical: PropTypes.bool,
+  horizontal: PropTypes.bool,
   className: PropTypes.string,
 };
 
