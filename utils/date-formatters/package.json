@@ -1,7 +1,7 @@
 {
-  "name": "@drivetribe/utils-number-formatters",
+  "name": "@drivetribe/utils-date-formatters",
   "version": "1.0.0",
-  "description": "Collection of number formatter functions to change numbers for display purposes.",
+  "description": "Collection of date formatter functions to format ISO dates for display purposes.",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run lint && npm run test && babel src --out-dir lib",

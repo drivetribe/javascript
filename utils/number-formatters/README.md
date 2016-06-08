@@ -1,6 +1,6 @@
 # @drivetribe/utils-number-formatters
 
-Collection of number formatter functions to change numbers and dates for display purposes.
+Collection of number formatter functions to change numbers for display purposes.
 
 ## Installation
 
