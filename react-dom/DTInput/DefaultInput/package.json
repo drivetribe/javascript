@@ -1,10 +1,11 @@
 {
   "name": "@drivetribe/react-dom-default-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Default input which could be used as a basis for building more complicated inputs",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel --presets es2015,stage-0,react src --out-dir lib && cp src/styles.css lib/styles.css"
+    "compile": "babel --presets es2015,stage-0,react src --out-dir lib && cp src/styles.css lib/styles.css",
+    "prepublish": "npm run compile"
   },
   "files": [
     "lib"
