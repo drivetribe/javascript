@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/react-dom-default-input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Default input which could be used as a basis for building more complicated inputs",
   "main": "lib/index.js",
   "scripts": {
