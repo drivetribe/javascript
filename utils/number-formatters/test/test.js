@@ -46,4 +46,3 @@ describe('roundToDecimalPlace()', () => {
     expect(roundToDecimalPlace(TEST_NUMBER)).to.equal(12.35);
   });
 });
-
