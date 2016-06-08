@@ -1,0 +1,34 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "ecmaFeatures": {
+        "forOf": true,
+        "jsx": true,
+        "es6": true,
+        "experimentalObjectRestSpread": true,
+        "modules": true
+    },
+    "rules": {
+        "comma-dangle": 0,
+        "max-len": [1, {"code": 120}],
+        "indent": [2, 2, {"SwitchCase": 1}],
+        "react/prop-types": 0,
+        "global-require": 0,
+        "prefer-template": 0
+    },
+    "plugins": [
+        "flowtype",
+        "jsx-a11y",
+        "react"
+    ],
+    "settings": {
+        "flowtype": {
+            "onlyFilesWithFlowAnnotation": false
+        }
+    }
+}
