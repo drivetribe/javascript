@@ -2,7 +2,7 @@
 
 Collection of number formatter functions to change numbers for display purposes.
 
-## Installation
+## Install
 
 Install the module directly from npm:
 
