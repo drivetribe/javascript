@@ -1,5 +1,5 @@
 import React from 'react';
-import DefaultInput from '@drivetribe/react-dom-default-input/DTInput/DefaultInput';
+import DefaultInput from '@drivetribe/react-dom-default-input';
 
 /**
  * Class representing a DefaultInput.
