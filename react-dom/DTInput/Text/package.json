@@ -4,7 +4,8 @@
   "description": "Text input component",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel --presets es2015,stage-0,react src --out-dir lib"
+    "compile": "babel --presets es2015,stage-0,react src --out-dir lib",
+    "prepublish": "npm run compile"
   },
   "files": [
     "lib"

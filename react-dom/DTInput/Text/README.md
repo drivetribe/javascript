@@ -15,6 +15,8 @@ npm install @drivetribe/react-dom-text-input --save
 ```js
 import TextInput from '@drivetribe/react-dom-text-input';
 
+<TextInput handleOnChange={() => someFunction()} />
+
 <TextInput error className={styles.additionalClassName} {...props} />
 
 <TextInput valid value={value} {...props} />
