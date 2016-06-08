@@ -1,0 +1,33 @@
+{
+  "name": "@drivetribe/react-dom-text-input",
+  "version": "1.0.0",
+  "description": "Text input component",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel --presets es2015,stage-0,react src --out-dir lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drivetribe/javascript-packages/tree/master/react-dom/DTInput/Text"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "text-input"
+  ],
+  "author": "Julia Sklyar <julia.sklyar@drivetribe.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@drivetribe/react-dom-default-input": "1.0.1",
+    "react": "15.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.9.0",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-0": "6.5.0"
+  }
+}

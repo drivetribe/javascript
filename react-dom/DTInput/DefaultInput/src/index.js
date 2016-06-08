@@ -10,15 +10,15 @@ import styles from './styles.css';
 class DefaultInput extends Component {
   constructor(props) {
     super(props);
-    this.handleChangeInput = this.handleChangeInput.bind(this);
-    this.state = { value: props.value };    
+    this.handleOnChange = this.handleOnChange.bind(this);
+    this.state = { value: props.value };
   }
 
-  handleChangeInput(ev) {
-    const value = ev.target.value;
+  handleOnChange(event) {
+    const value = event.target.value;
     this.setState({ value });
-    if(this.props.onVauelChange) {
-      this.props.onVauelChange(value);
+    if (this.props.handleOnChange) {
+      this.props.handleOnChange(value);
     }
   }
 
@@ -31,11 +31,11 @@ class DefaultInput extends Component {
       [styles.disabled]: disabled,
       [styles.className]: className,
     });
-    
+
     return (
       <input
         className={inputClass}
-        onChange={this.handleChangeInput}
+        onChange={this.handleOnChange}
         value={this.state.value}
         {...restProps}
       />
@@ -46,11 +46,13 @@ class DefaultInput extends Component {
 
 DefaultInput.propTypes = {
   type: PropTypes.string.isRequired,
-  error: PropTypes.boolean,
-  valid: PropTypes.boolean,
-  disabled: PropTypes.boolean,
+  error: PropTypes.bool,
+  valid: PropTypes.bool,
+  disabled: PropTypes.bool,
   className: PropTypes.string,
   placeholder: PropTypes.string,
+  value: PropTypes.string,
+  handleOnChange: PropTypes.func
 };
 
 export default DefaultInput;

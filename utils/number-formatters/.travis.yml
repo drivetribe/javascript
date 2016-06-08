@@ -5,7 +5,9 @@ node_js:
 
 install:
   - npm install
+
 script:
   - npm run compile
+
 after_success:
   - npm run semantic-release
