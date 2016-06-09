@@ -1,0 +1,16 @@
+{
+  "name": "@drivetribe/react-dom-panel",
+  "version": "1.0.0",
+  "description": "A reusable composable panel element",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "panel",
+    "react-component"
+  ],
+  "author": "Olivier Colonna <olivier.colonna@drivetribe.com>",
+  "license": "MIT"
+}
