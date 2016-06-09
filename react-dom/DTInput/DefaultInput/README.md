@@ -16,7 +16,7 @@ npm install @drivetribe/react-dom-default-input --save
 ```js
 import DefaultInput from '@drivetribe/react-dom-default-input';
 
-<DefaultInput handleOnChange={() => someFunction()} />
+<DefaultInput onChange={() => someFunction()} onClick={() => someFunction()} />
 
 <DefaultInput type="text" error className={styles.additionalClassName} {...props} />
 
