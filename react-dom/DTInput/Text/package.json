@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/react-dom-text-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Text input component",
   "main": "lib/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "author": "Julia Sklyar <julia.sklyar@drivetribe.com>",
   "license": "ISC",
   "dependencies": {
-    "@drivetribe/react-dom-default-input": "1.0.4",
+    "@drivetribe/react-dom-default-input": "1.0.5",
     "react": "15.1.0"
   },
   "devDependencies": {
