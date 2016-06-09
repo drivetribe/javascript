@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run lint && npm run test && babel src --out-dir lib",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "mocha --compilers js:babel-register",
+    "test": "node_modules/mocha/bin/mocha --compilers js:babel-register",
     "lint": "eslint src"
   },
   "repository": {
@@ -22,12 +22,14 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
     "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
     "eslint": "^2.10.2",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-flowtype": "^2.2.7",
     "eslint-plugin-import": "^1.8.0",
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.1.1",
+    "mocha": "^2.5.3",
     "semantic-release": "^4.3.5"
   }
 }
