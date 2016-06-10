@@ -2,7 +2,7 @@ import chai from 'chai';
 import {
   composeReducers,
   createReducerFromMap
-} from '../src/reducer-composers';
+} from '../src/index';
 
 const { expect } = chai;
 
