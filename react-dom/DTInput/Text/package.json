@@ -22,7 +22,7 @@
   "author": "Julia Sklyar <julia.sklyar@drivetribe.com>",
   "license": "ISC",
   "dependencies": {
-    "@drivetribe/react-dom-default-input": "1.0.5",
+    "@drivetribe/react-dom-default-input": "1.0.6",
     "react": "15.1.0"
   },
   "devDependencies": {
