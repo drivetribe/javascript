@@ -7,8 +7,8 @@ import styles from './styles.css';
  * @author julia.sklyar@drivetribe.com
  */
 
-const DefaultInput = () => {
-  const { error, valid, disabled, className, ...restProps } = this.props;
+const DefaultInput = (props) => {
+  const { error, valid, disabled, className, ...restProps } = props;
   const inputClass = classNames({
     [styles.defaultInput]: true,
     [styles.error]: error,
