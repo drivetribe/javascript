@@ -1,0 +1,28 @@
+.panel {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.panelDefault {
+  border-color: #ddd;
+}
+
+.panelBody {
+  padding: 15px;
+}
+
+.panelFooter {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.panelHeader {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}

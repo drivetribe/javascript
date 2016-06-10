@@ -4,10 +4,13 @@
   "description": "Reusable image component",
   "main": "index.js",
   "scripts": {
-    "compile": "babel --presets es2015,stage-2,react -d ./ src/",
+    "compile": "babel --presets es2015,stage-0,react src --out-dir lib && cp src/styles.css lib/styles.css",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/drivetribe/javascript-packages.git"

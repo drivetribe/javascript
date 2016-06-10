@@ -3,8 +3,9 @@ import wrapImageInApiParser from '@drivetribe/react-higher-wrap-image-in-api-par
 
 const DTImage = (props) => (
   <img
-    {...props}
+    alt={props.alt}
     role="presentation"
+    {...props}
   />
 );
 

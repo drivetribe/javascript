@@ -1,0 +1,43 @@
+.defaultInput {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.defaultInput:focus {
+  outline: 0;
+  border-color: #129fea;
+  box-shadow: 0 0 3px #74bee6;
+}
+
+.error {
+  composes: defaultInput;
+  border: 1px solid #cb0101;
+}
+
+.error:focus {
+  outline: 0;
+  border-color: #cb0101;
+  box-shadow: 0 0 3px #c73e3e;
+}
+
+.valid {
+  composes: defaultInput;
+  border: 1px solid #05b636;
+}
+
+.valid:focus {
+  outline: 0;
+  border-color: #05b636;
+  box-shadow: 0 0 3px #51af6b;
+}
+
+.disabled {
+  composes: defaultInput;
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
