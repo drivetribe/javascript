@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/utils-date-formatters",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Collection of date formatter functions to format ISO dates for display purposes.",
   "main": "lib/index.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
     "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
     "eslint": "^2.10.2",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-flowtype": "^2.2.7",
