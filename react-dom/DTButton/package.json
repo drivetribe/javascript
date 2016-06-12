@@ -4,8 +4,12 @@
   "description": "A generic and reusable button",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel --presets es2015,react src --out-dir lib && cp src/styles.css lib/styles.css",
+    "prepublish": "npm run compile"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/drivetribe/javascript-packages/tree/master/react-dom"
@@ -17,5 +21,9 @@
     "button"
   ],
   "author": "Olivier Colonna <olivier.colonna@drivetribe.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "2.2.5",
+    "react": "15.1.0"
+  }
 }
