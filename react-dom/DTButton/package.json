@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/react-dom-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A generic and reusable button",
   "main": "lib/index.js",
   "scripts": {
