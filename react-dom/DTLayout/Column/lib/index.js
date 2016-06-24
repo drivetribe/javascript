@@ -37,7 +37,7 @@ var Column = function Column(props) {
 
   var restProps = _objectWithoutProperties(props, ['children', 'unit', 'unitSm', 'unitMd', 'unitLg', 'unitXl', 'className']);
 
-  var columnClassNames = (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, _styles2.default['column-' + unit], unit), _defineProperty(_classNames, _styles2.default['columnSm-' + unitSm], unitSm), _defineProperty(_classNames, _styles2.default['columnMd-' + unitMd], unitMd), _defineProperty(_classNames, _styles2.default['columnLg-' + unitLg], unitLg), _defineProperty(_classNames, _styles2.default['columnXL-' + unitXl], unitXl), _defineProperty(_classNames, className, className), _classNames));
+  var columnClassNames = (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, _styles2.default.column, true), _defineProperty(_classNames, _styles2.default['column-' + unit], unit), _defineProperty(_classNames, _styles2.default['columnSm-' + unitSm], unitSm), _defineProperty(_classNames, _styles2.default['columnMd-' + unitMd], unitMd), _defineProperty(_classNames, _styles2.default['columnLg-' + unitLg], unitLg), _defineProperty(_classNames, _styles2.default['columnXL-' + unitXl], unitXl), _defineProperty(_classNames, className, className), _classNames));
 
   return _react2.default.createElement(
     'div',
