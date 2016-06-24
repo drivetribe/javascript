@@ -14,17 +14,18 @@ const Column = (props) => {
     ...restProps,
   } = props;
 
-  const jointClassNames = classNames(
-    styles[`column-${unit}`],
-    styles[`columnSm-${unitSm}`],
-    styles[`columnMd-${unitMd}`],
-    styles[`columnLg-${unitLg}`],
-    styles[`columnXL-${unitXl}`],
-    className
-  );
+  const columnClassNames = classNames({
+    [styles.column]: true,
+    [styles[`column-${unit}`]]: unit,
+    [styles[`columnSm-${unitSm}`]]: unitSm,
+    [styles[`columnMd-${unitMd}`]]: unitMd,
+    [styles[`columnLg-${unitLg}`]]: unitLg,
+    [styles[`columnXL-${unitXl}`]]: unitXl,
+    [className]: className,
+  });
 
   return (
-    <div className={jointClassNames} {...restProps}>
+    <div className={columnClassNames} {...restProps}>
       {children}
     </div>
   );
