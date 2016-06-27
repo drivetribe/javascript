@@ -39,7 +39,9 @@ Break point property could have these string values:
 `1-2` - which means that Column would be 50% width.  
 `1-3` - which means that Column would be 1/3 of 100% width.
 `2-3` - which means that Column would be 2/3 of 100% width.
-`1-4` - which means that Column would be 20% width.  
+`1-4` - which means that Column would be 25% width.
+`1-5` - which means that Column would be 20% width.
+`3-10` - which means that Column would be 30% width.
 
 `Column` can accept any additional properties
 including `className` and pass them down to element.
