@@ -13,11 +13,19 @@
   }
 
   .column$(breakPoint)-2-3 {
-    width: calc(100% / (2 * 3));
+    width: calc(100%  * (2 / 3));
   }
 
   .column$(breakPoint)-1-4 {
     width: calc(100% / 4);
+  }
+
+  .column$(breakPoint)-1-5 {
+    width: calc(100% / 5);
+  }
+
+  .column$(breakPoint)-3-10 {
+    width: calc(100% * (3 / 10));
   }
 }
 
