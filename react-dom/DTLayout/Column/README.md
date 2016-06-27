@@ -32,10 +32,11 @@ import Column from '@drivetribe/react-dom-column';
 `Column` component of react-dom-layout accepts next break point properties:
 `unit`, `unitSm`, `unitMd`, `unitLg`, `unitXl`.
 
-For the related minimal width of device screens:
+For the related minimal width of device screens, following mobile-fist conception:
 **all, 568px, 768px, 1024px, 1280px**.
 
 Break point property could have these string values:  
+`1` - which means that Column would be 100% width.  
 `1-2` - which means that Column would be 50% width.  
 `1-3` - which means that Column would be 1/3 of 100% width.
 `2-3` - which means that Column would be 2/3 of 100% width.
