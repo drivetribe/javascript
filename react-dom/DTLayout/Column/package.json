@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/react-dom-column",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Column element for grid system",
   "main": "lib/index.js",
   "scripts": {
