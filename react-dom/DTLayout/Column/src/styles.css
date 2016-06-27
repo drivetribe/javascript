@@ -4,26 +4,32 @@
 }
 
 @define-mixin column $breakPoint {
+  /* 50% */
   .column$(breakPoint)-1-2 {
     width: calc(100% / 2);
   }
 
+  /* 33.33% */
   .column$(breakPoint)-1-3 {
     width: calc(100% / 3);
   }
 
+  /* 66.66% */
   .column$(breakPoint)-2-3 {
     width: calc(100%  * (2 / 3));
   }
 
+  /* 25% */
   .column$(breakPoint)-1-4 {
     width: calc(100% / 4);
   }
 
+  /* 20% */
   .column$(breakPoint)-1-5 {
     width: calc(100% / 5);
   }
 
+  /* 30% */
   .column$(breakPoint)-3-10 {
     width: calc(100% * (3 / 10));
   }
