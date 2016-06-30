@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/react-dom-image",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.1",
   "description": "Reusable image component",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,7 @@
   },
   "homepage": "https://github.com/drivetribe/javascript-packages#readme",
   "dependencies": {
-    "@drivetribe/react-dom-image": "^1.0.0",
-    "express": "git+https://git@github.com/visionmedia/express.git",
+    "classnames": "2.2.5",
     "react": "^15.1.0"
   },
   "devDependencies": {
@@ -31,8 +30,6 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "6.5.0",
-    "classnames": "2.2.5",
     "semantic-release": "^4.3.5"
-  },
-  "private": true
+  }
 }
