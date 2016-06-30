@@ -14,7 +14,7 @@ const DefaultInput = (props) => {
     [styles.error]: error,
     [styles.valid]: valid,
     [styles.disabled]: disabled,
-    [styles.className]: className,
+    [className]: className,
   });
 
   return (
