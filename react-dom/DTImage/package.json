@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/react-dom-image",
-  "version": "1.0.0-semantically-released",
+  "version": "0.0.0-semantically-released",
   "description": "Reusable image component",
   "main": "index.js",
   "scripts": {
