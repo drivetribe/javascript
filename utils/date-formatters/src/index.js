@@ -43,3 +43,28 @@ export function relativeDate(date) {
 
   return 'Just now';
 }
+
+/**
+ * Convert time, in seconds, to a human-readable [HH:M]M:SS format
+ * @param  {float}
+ * @return {string}
+ */
+export function convertSecondsToDuration(seconds) {
+  const ms = parseInt(seconds * 1000, 10);
+  const totalHours = Math.floor(ms / HOUR_DURATION);
+  const totalMinutes = Math.floor(ms / MINUTE_DURATION);
+  const totalSeconds = Math.floor(ms / SECOND_DURATION);
+  const remainingMinutes = totalHours ? totalMinutes % (totalHours * 60) : totalMinutes;
+  const remainingSeconds = totalMinutes ? totalSeconds % (totalMinutes * 60) : totalSeconds;
+
+  let duration = (remainingSeconds < 10) ? `0${remainingSeconds}` : remainingSeconds;
+
+  if (totalHours) {
+    duration = ((remainingMinutes < 10) ? `0${remainingMinutes}` : remainingMinutes) + `:${duration}`;
+    duration = `${totalHours}:${duration}`;
+  } else {
+    duration = `${remainingMinutes}:${duration}`;
+  }
+
+  return duration;
+}

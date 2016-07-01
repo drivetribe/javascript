@@ -6,7 +6,8 @@ import {
   DAY_DURATION,
   MONTH_DURATION,
   YEAR_DURATION,
-  relativeDate
+  relativeDate,
+  convertSecondsToDuration
 } from '../src';
 
 const { expect } = chai;
@@ -55,5 +56,18 @@ describe('relativeDate()', () => {
     const threeYearsAgo = rightNow - (YEAR_DURATION * 3.3);
     expect(relativeDate(threeYearsAgo)).to.equal('3 years ago');
     // omg shoot me
+  });
+});
+
+describe('convertSecondsToDuration()', () => {
+  it('should convert a time, given in seconds, to a [HH:M]M:SS format', () => {
+    expect(convertSecondsToDuration(HOUR_DURATION / 1000 + 60 + 1)).to.equal('1:01:01');
+    expect(convertSecondsToDuration(9)).to.equal('0:09');
+    expect(convertSecondsToDuration(60)).to.equal('1:00');
+    expect(convertSecondsToDuration(90)).to.equal('1:30');
+    expect(convertSecondsToDuration(60 * 10)).to.equal('10:00');
+    expect(convertSecondsToDuration(HOUR_DURATION / 1000)).to.equal('1:00:00');
+    expect(convertSecondsToDuration(HOUR_DURATION / 1000 + 60)).to.equal('1:01:00');
+    expect(convertSecondsToDuration((HOUR_DURATION / 1000) * 500)).to.equal('500:00:00');
   });
 });
