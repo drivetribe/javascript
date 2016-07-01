@@ -17,3 +17,9 @@ npm install @drivetribe/utils-date-formatters --save
 Converts ISO date or Unix timestamp to a relative date like "just now" or "5 days ago".
 
 `relativeDate(date: number||string): string`
+
+### Convert seconds to duration
+
+Converts a time, given in seconds, to a human-readable duration in the [HH:M]M:SS format.
+
+`convertSecondsToDuration(seconds: number): string`
