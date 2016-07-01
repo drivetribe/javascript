@@ -1,7 +1,7 @@
 {
-  "name": "@drivetribe/react-dom-default-input",
-  "version": "1.0.7",
-  "description": "Default input which could be used as a basis for building more complicated inputs",
+  "name": "@drivetribe/react-dom-column",
+  "version": "1.0.4",
+  "description": "Column element for grid system",
   "main": "lib/index.js",
   "scripts": {
     "compile": "babel --presets es2015,stage-0,react src --out-dir lib && cp src/styles.css lib/styles.css",
@@ -12,12 +12,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/drivetribe/javascript-packages/tree/master/react-dom/DTInput/DefaultInput"
+    "url": "https://github.com/drivetribe/javascript-packages/tree/master/react-dom/DTLayout/Column"
   },
   "keywords": [
     "react",
     "react-component",
-    "default input"
+    "grid",
+    "column"
   ],
   "author": "Julia Sklyar <julia.sklyar@drivetribe.com>",
   "license": "ISC",

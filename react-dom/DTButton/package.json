@@ -1,0 +1,29 @@
+{
+  "name": "@drivetribe/react-dom-button",
+  "version": "1.0.1",
+  "description": "A generic and reusable button",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel --presets es2015,react src --out-dir lib && cp src/styles.css lib/styles.css",
+    "prepublish": "npm run compile"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drivetribe/javascript-packages/tree/master/react-dom"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-dom-button",
+    "button"
+  ],
+  "author": "Olivier Colonna <olivier.colonna@drivetribe.com>",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "2.2.5",
+    "react": "15.1.0"
+  }
+}

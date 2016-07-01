@@ -1,0 +1,12 @@
+.defaultImageCls {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.onImageLoaded {
+  opacity: 1;
+}
+
+.onImageError {
+  opacity: 0;
+}

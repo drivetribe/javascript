@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/utils-number-formatters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collection of number formatter functions to change numbers for display purposes.",
   "main": "lib/index.js",
   "scripts": {
