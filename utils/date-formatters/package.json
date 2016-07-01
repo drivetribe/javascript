@@ -1,6 +1,6 @@
 {
   "name": "@drivetribe/utils-date-formatters",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Collection of date formatter functions to format ISO dates for display purposes.",
   "main": "lib/index.js",
   "scripts": {
