@@ -10,7 +10,7 @@ const cli = new CLIEngine({
 
   rules: {
     // It is okay to import devDependencies in tests.
-    'import/no-extraneous-dependencies': [2, { devDependencies: true }],
+    'import/no-extraneous-dependencies': [1, { devDependencies: true }],
   },
 });
 
@@ -70,7 +70,7 @@ test('validate react prop order', (t) => {
   render() { return <div />; }
 `));
 
-    t.ok(result.errorCount, 'fails');
+    t.ok(result.warningCount, 'fails');
     t.equal(result.messages[0].ruleId, 'react/sort-comp', 'fails due to sort');
   });
 
@@ -87,7 +87,7 @@ test('validate react prop order', (t) => {
   render() { return <div />; }
 `));
 
-    t.ok(result.errorCount, 'fails');
+    t.ok(result.warningCount, 'fails');
     t.equal(result.messages[0].ruleId, 'react/sort-comp', 'fails due to sort');
   });
 });

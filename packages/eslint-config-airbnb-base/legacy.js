@@ -16,9 +16,9 @@ module.exports = {
   ecmaFeatures: {},
   globals: {},
   rules: {
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['warn', 'never'],
     'prefer-numeric-literals': 'off',
-    'no-restricted-properties': ['error', {
+    'no-restricted-properties': ['warn', {
       object: 'arguments',
       property: 'callee',
       message: 'arguments.callee is deprecated',

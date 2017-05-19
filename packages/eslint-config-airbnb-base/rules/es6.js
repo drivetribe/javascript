@@ -15,43 +15,43 @@ module.exports = {
     // enforces no braces where they can be omitted
     // http://eslint.org/docs/rules/arrow-body-style
     // TODO: enable requireReturnForObjectLiteral?
-    'arrow-body-style': ['error', 'as-needed', {
+    'arrow-body-style': ['warn', 'as-needed', {
       requireReturnForObjectLiteral: false,
     }],
 
     // require parens in arrow function arguments
     // http://eslint.org/docs/rules/arrow-parens
-    'arrow-parens': ['error', 'as-needed', {
+    'arrow-parens': ['warn', 'as-needed', {
       requireForBlockBody: true,
     }],
 
     // require space before/after arrow function's arrow
     // http://eslint.org/docs/rules/arrow-spacing
-    'arrow-spacing': ['error', { before: true, after: true }],
+    'arrow-spacing': ['warn', { before: true, after: true }],
 
     // verify super() callings in constructors
-    'constructor-super': 'error',
+    'constructor-super': 'warn',
 
     // enforce the spacing around the * in generator functions
     // http://eslint.org/docs/rules/generator-star-spacing
-    'generator-star-spacing': ['error', { before: false, after: true }],
+    'generator-star-spacing': ['warn', { before: false, after: true }],
 
     // disallow modifying variables of class declarations
     // http://eslint.org/docs/rules/no-class-assign
-    'no-class-assign': 'error',
+    'no-class-assign': 'warn',
 
     // disallow arrow functions where they could be confused with comparisons
     // http://eslint.org/docs/rules/no-confusing-arrow
-    'no-confusing-arrow': ['error', {
+    'no-confusing-arrow': ['warn', {
       allowParens: true,
     }],
 
     // disallow modifying variables that are declared using const
-    'no-const-assign': 'error',
+    'no-const-assign': 'warn',
 
     // disallow duplicate class members
     // http://eslint.org/docs/rules/no-dupe-class-members
-    'no-dupe-class-members': 'error',
+    'no-dupe-class-members': 'warn',
 
     // disallow importing from the same path more than once
     // http://eslint.org/docs/rules/no-duplicate-imports
@@ -60,7 +60,7 @@ module.exports = {
 
     // disallow symbol constructor
     // http://eslint.org/docs/rules/no-new-symbol
-    'no-new-symbol': 'error',
+    'no-new-symbol': 'warn',
 
     // disallow specific imports
     // http://eslint.org/docs/rules/no-restricted-imports
@@ -68,42 +68,42 @@ module.exports = {
 
     // disallow to use this/super before super() calling in constructors.
     // http://eslint.org/docs/rules/no-this-before-super
-    'no-this-before-super': 'error',
+    'no-this-before-super': 'warn',
 
     // disallow useless computed property keys
     // http://eslint.org/docs/rules/no-useless-computed-key
-    'no-useless-computed-key': 'error',
+    'no-useless-computed-key': 'warn',
 
     // disallow unnecessary constructor
     // http://eslint.org/docs/rules/no-useless-constructor
-    'no-useless-constructor': 'error',
+    'no-useless-constructor': 'warn',
 
     // disallow renaming import, export, and destructured assignments to the same name
     // http://eslint.org/docs/rules/no-useless-rename
-    'no-useless-rename': ['error', {
+    'no-useless-rename': ['warn', {
       ignoreDestructuring: false,
       ignoreImport: false,
       ignoreExport: false,
     }],
 
     // require let or const instead of var
-    'no-var': 'error',
+    'no-var': 'warn',
 
     // require method and property shorthand syntax for object literals
     // http://eslint.org/docs/rules/object-shorthand
-    'object-shorthand': ['error', 'always', {
+    'object-shorthand': ['warn', 'always', {
       ignoreConstructors: false,
       avoidQuotes: true,
     }],
 
     // suggest using arrow functions as callbacks
-    'prefer-arrow-callback': ['error', {
+    'prefer-arrow-callback': ['warn', {
       allowNamedFunctions: false,
       allowUnboundThis: true,
     }],
 
     // suggest using of const declaration for variables that are never modified after declared
-    'prefer-const': ['error', {
+    'prefer-const': ['warn', {
       destructuring: 'any',
       ignoreReadBeforeAssign: true,
     }],
@@ -120,7 +120,7 @@ module.exports = {
 
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     // http://eslint.org/docs/rules/prefer-numeric-literals
-    'prefer-numeric-literals': 'error',
+    'prefer-numeric-literals': 'warn',
 
     // suggest using Reflect methods where applicable
     // http://eslint.org/docs/rules/prefer-reflect
@@ -129,23 +129,23 @@ module.exports = {
 
     // use rest parameters instead of arguments
     // http://eslint.org/docs/rules/prefer-rest-params
-    'prefer-rest-params': 'error',
+    'prefer-rest-params': 'warn',
 
     // suggest using the spread operator instead of .apply()
     // http://eslint.org/docs/rules/prefer-spread
-    'prefer-spread': 'error',
+    'prefer-spread': 'warn',
 
     // suggest using template literals instead of string concatenation
     // http://eslint.org/docs/rules/prefer-template
-    'prefer-template': 'error',
+    'prefer-template': 'warn',
 
     // disallow generator functions that do not have yield
     // http://eslint.org/docs/rules/require-yield
-    'require-yield': 'error',
+    'require-yield': 'warn',
 
     // enforce spacing between object rest-spread
     // http://eslint.org/docs/rules/rest-spread-spacing
-    'rest-spread-spacing': ['error', 'never'],
+    'rest-spread-spacing': ['warn', 'never'],
 
     // import sorting
     // http://eslint.org/docs/rules/sort-imports
@@ -157,14 +157,14 @@ module.exports = {
 
     // require a Symbol description
     // http://eslint.org/docs/rules/symbol-description
-    'symbol-description': 'error',
+    'symbol-description': 'warn',
 
     // enforce usage of spacing in template strings
     // http://eslint.org/docs/rules/template-curly-spacing
-    'template-curly-spacing': 'error',
+    'template-curly-spacing': 'warn',
 
     // enforce spacing around the * in yield* expressions
     // http://eslint.org/docs/rules/yield-star-spacing
-    'yield-star-spacing': ['error', 'after']
+    'yield-star-spacing': ['warn', 'after']
   }
 };
