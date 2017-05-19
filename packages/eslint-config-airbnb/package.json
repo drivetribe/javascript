@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-airbnb",
+  "name": "@drivetribe/eslint-config-airbnb",
   "version": "15.0.1",
   "description": "Airbnb's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
-    "lint": "eslint .",
+    "lint": "eslint --max-warnings 0 .",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
@@ -46,7 +46,7 @@
   },
   "homepage": "https://github.com/airbnb/javascript",
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.2.0"
+    "@drivetribe/eslint-config-airbnb-base": "^11.2.0"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.2.3",

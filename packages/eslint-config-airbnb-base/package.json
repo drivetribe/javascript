@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-airbnb-base",
+  "name": "@drivetribe/eslint-config-airbnb-base",
   "version": "11.2.0",
   "description": "Airbnb's base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
-    "lint": "eslint .",
+    "lint": "eslint --max-warnings 0 .",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
