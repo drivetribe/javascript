@@ -4,7 +4,7 @@
   "description": "A categorised list of emoji characters",
   "main": "emoji.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "node convert"
   },
   "author": "DriveTribe",
   "license": "MIT"

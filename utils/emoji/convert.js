@@ -8,10 +8,12 @@ const output = input
   .reduce((acc, { unified, short_name, category }) => {
     if (!acc[category]) acc[category] = [];
 
+    const unicode = unified.split('-');
+
     acc[category].push({
       //id: short_name,
-      unicode: unified,
-      displayCode: String.fromCodePoint(...unified.split('-').map(u => `0x${u}`))
+      unicode,
+      displayCode: String.fromCodePoint(...unicode.map(u => `0x${u}`))
     });
 
     return acc;
